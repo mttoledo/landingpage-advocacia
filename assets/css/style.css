@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html, body {
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    background-image: linear-gradient(to bottom, black, black, rgb(18, 18, 18));
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent, #f1bd32, #f1bd32, transparent) 1;
+    
+    position: sticky;
+    top: 0;  
+    z-index: 1000;
+}
+
+header img {
+    height: 8rem;
+    padding: 10px;
+    margin-left: 7rem;
+}
+
+nav {
+    margin-right: 2rem;
+    margin: auto;
+}
+
+nav a {
+    margin: 1rem;
+    padding: 0px 5px 7px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #f1bd32;
+    border-bottom: 3px solid #f1bd32;
+}
+
+.section-title {
+    margin-top: 9rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 80px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #f1bd32;
+    text-decoration: overline;
+}
+
+#home {
+    height: calc(100vh - 8rem);
+    background-image: url(../images/home-background.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.426);
+}
+
+#services {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.services-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.services-card {
+    width: 280px;
+    height: 347,2px;
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.426);
+}
+
+.services-card img {
+    height: 300px;
+    width: 100%;
+    margin: 0;
+}
+
+.services-card a {
+    text-decoration: none;
+    color: #f1bd32;
+}
+
+.services-card a:hover {
+    color: black;
+}
+
+.services-card h3, a {
+    padding-left: 10px;
+}
