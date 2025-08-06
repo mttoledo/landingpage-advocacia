@@ -133,36 +133,44 @@ header button:hover {
     align-items: center;
 }
 
-.services-container {
+.services-box {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.services-card {
-    width: 280px;
-    height: 347,2px;
+.services-container {
     border: 1px solid rgba(0, 0, 0, 0.315);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.266);
 }
 
-.services-card img {
+.services-card {
+    width: 280px;
     height: 300px;
-    width: 100%;
-    margin: 0;
+    overflow: hidden;
+    position: relative;
 }
 
-.services-card a {
+.services-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.services-card img:hover {
+    transform: scale(1.1);
+    transform-origin: center center;
+}
+
+.card-info h3 {
+    padding: 10px 0px 0px 10px;
+}
+
+.card-info a {
     text-decoration: none;
     color: #f1bd32;
-}
-
-.services-card a:hover {
-    color: black;
-}
-
-.services-card h3, a {
     padding-left: 10px;
 }
 
@@ -192,4 +200,7 @@ header button:hover {
 #contact iframe {
     width: 800px;
     height: 400px;
+}
+.card-info a:hover {
+    color: black;
 }
