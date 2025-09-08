@@ -184,6 +184,7 @@ header button:hover {
 .services-container {
     border: 1px solid rgba(0, 0, 0, 0.315);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.266);
+    padding-bottom: 10px;
 }
 
 .services-card {
@@ -215,6 +216,10 @@ header button:hover {
     padding-left: 10px;
 }
 
+.card-info a:hover {
+    color: black;
+}
+
 .block {
     animation: appear both;
     animation-timeline: view(80% 10%);
@@ -236,12 +241,112 @@ header button:hover {
     }
 }
 
+/* Presentation Section */
+
+.presentation-title {
+    padding-top: 9rem;
+    text-align: center;
+}
+
+.presentation-container {
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    width: fit-content;
+}
+
+.presentation-left {
+    width: 500px;
+    text-align: justify;
+}
+
+.presentation-left h3 {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    display: inline-block;
+    border-bottom: 3px solid #f1bd32;
+}
+
+#welcome {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.presentation-right img {
+    width: 500px;
+    height: 370px;
+}
+
+.animate-right {
+    animation: right-appear both;
+    animation-timeline: view(95% 10%);
+}
+
+@keyframes right-appear {
+    from {
+        opacity: 0;
+        transform: translateX(180px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-left {
+    animation: left-appear both;
+    animation-timeline: view(95% 10%);
+}
+
+@keyframes left-appear {
+    from {
+        opacity: 0;
+        transform: translateX(-180px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 /* Contact Section */
 
-#contact iframe {
-    width: 800px;
-    height: 400px;
+#contact {
+    padding-top: 0.2rem;
 }
-.card-info a:hover {
-    color: black;
+
+#contact iframe {
+    width: 70%;
+    height: 300px;
+}
+
+.contact-info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+span.material-symbols-outlined {
+  font-size: 2.5rem;
+  color: #f1bd32;
+  padding-bottom: 5px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
