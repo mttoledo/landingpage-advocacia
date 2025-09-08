@@ -119,13 +119,54 @@ header button:hover {
     text-decoration-thickness: 2px;
 }
 
+/* Configurações da Section Home */
+
 #home {
     height: calc(100vh - 8rem);
-    background-image: url(../images/home-background.jpg);
+    background-image: url(../images/background.jpeg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.426);
+    display: flex;
 }
+
+#feedback {
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+    padding: 25px 25px 50px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.header-feedback {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+#logo-google {
+    width: 25px;
+    position: absolute; 
+    right: 20px;
+    top: 20px;
+}
+
+#feedback h3 {
+    margin: 10px 0px;
+    color: #f1bd32;
+}
+
+#logo-google {
+    width: 25px;
+}
+
+/* Configurações da Section Services */
 
 #services {
     display: flex;
